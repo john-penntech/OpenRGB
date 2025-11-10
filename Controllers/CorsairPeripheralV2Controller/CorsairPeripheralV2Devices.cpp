@@ -872,6 +872,7 @@ static const corsair_v2_device k60_rgb_pro_tkl_device_w =
 |       Matrix                                                  |
 |       6 Rows, 21 Columns                                      |
 \*-------------------------------------------------------------*/
+
 static const corsair_v2_zone k70_core_rgb_zone =
 {
     ZONE_EN_KEYBOARD,
@@ -888,11 +889,14 @@ static const corsair_v2_device k70_core_rgb_device =
     21,
     {
         &k70_core_rgb_zone,
-        nullptr,
-        nullptr,
-        nullptr,
-        nullptr,
-        nullptr
+        {   0,      0,      0,          182,        "Wheel 1",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_ROW,         },
+        {   0,      0,      1,          183,        "Wheel 2",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      2,          184,        "Wheel 3",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      3,          185,        "Wheel 4",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      4,          186,        "Wheel 5",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      5,          187,        "Wheel 6",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      6,          188,        "Wheel 7",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
+        {   0,      0,      7,          189,        "Wheel 8",                  KEY_EN_UNUSED,              KEYBOARD_OPCODE_INSERT_SHIFT_RIGHT, },
     },
     &corsair_k70_layout
 };
